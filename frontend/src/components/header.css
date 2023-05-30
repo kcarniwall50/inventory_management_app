@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0.3rem;
+  box-shadow: 0 2px 0px rgba(156, 163, 162, 0.565);
+}
+
+.header-text {
+  font-size: 1.1rem;
+  color: rgb(118, 118, 122);
+}
+
+.header-user {
+  font-size: 1.1rem;
+  color: blue;
+}
+
+.header-logout {
+  font-size: 1.1rem;
+  background-color: rgb(246, 128, 18);
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.header-logout:hover {
+  color: rgb(0, 34, 255);
+}

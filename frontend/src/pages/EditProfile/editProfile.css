@@ -1,0 +1,41 @@
+.edit-profile-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 80%;
+  width: "40%";
+  margin: 0.5rem auto 1rem auto;
+  height: 100%;
+}
+
+.edit-profile-form > div {
+  margin: 0.3rem 0;
+}
+.edit-profile-form > div > label {
+  display: block;
+
+  margin: 0.1rem;
+}
+.edit-profile-form > div > input {
+  padding: 0.3rem;
+}
+
+.change-password > div {
+  margin: 0.5rem;
+  margin-inline: auto;
+}
+
+.change-password > div > input {
+  padding: 0.4rem;
+  background-color: rgb(215, 219, 219);
+}
+
+.edit-profile-button {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 2px;
+  margin-inline: auto;
+  background-color: rgb(12, 1, 23);
+  color: white;
+  cursor: pointer;
+}

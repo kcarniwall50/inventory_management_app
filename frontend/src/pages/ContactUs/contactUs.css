@@ -1,0 +1,45 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.contact-form-container {
+  margin-right: 1rem;
+  padding: 0.3rem;
+  box-shadow: 2px 2px 2px 2px rgb(174, 178, 177);
+  border-radius: 3px;
+}
+
+.contact-form-container > p,
+input,
+textarea {
+  padding: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.contact-connect {
+  margin-left: 1rem;
+  padding: 0.3rem;
+  background-color: rgb(75, 75, 248);
+  color: white;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 2px rgb(162, 162, 177);
+}
+
+.contact-connect > h3 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contact-connect > p {
+  margin-top: 1rem;
+  font-size: 17px;
+}
+
+.contact-info > p {
+  margin: 0.6rem;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+}

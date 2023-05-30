@@ -1,0 +1,39 @@
+.editContainer {
+  width: 70%;
+  margin:2rem auto;
+  background-color: rgb(246, 250, 250);
+  box-shadow: 1px 2px 5px 5px rgb(225, 223, 223) ;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.edit-form{
+  width: 90%;
+   margin: 2rem auto;
+  }
+  
+  .fieldCont{
+      display:flex;
+      flex-direction:column;
+      margin: 0.6rem 0;
+      line-height:1.4;
+  
+  }
+  
+  .editLabel{
+    padding:0rem;
+    margin-bottom: -0.2rem;
+  }
+  
+  .fieldContInput{
+    padding:0.4rem;
+    border: 1px solid rgb(199, 197, 197);
+  
+  }
+  
+  
+  .edit-form>button{
+    background-color: black;
+    color:white;  
+   margin: 1rem auto;
+  }

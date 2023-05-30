@@ -1,0 +1,94 @@
+
+
+.inventory-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.inventory-items1 {
+  background-color: rgb(5, 251, 38);
+  padding: 0.6rem;
+  display: inline-block;
+  justify-content: space-around;
+  color: white;
+  border-radius: 3px;
+  margin: 0.4rem;
+}
+.inventory-items2 {
+  padding: 0.6rem;
+  background-color: rgb(0, 190, 254);
+  display: inline-block;
+  justify-content: space-around;
+  color: white;
+  border-radius: 3px;
+  margin: 0.4rem;
+}
+
+.inventory-items3 {
+  background-color: rgb(247, 202, 151);
+  padding: 0.6rem;
+  display: inline-block;
+  justify-content: space-around;
+  color: white;
+  border-radius: 3px;
+  margin: 0.4rem;
+}
+
+.inventory-items4 {
+  background-color: rgb(36, 250, 228);
+  padding: 0.6rem;
+  display: inline-block;
+  justify-content: space-around;
+  color: white;
+  border-radius: 3px;
+  margin: 0.4rem;
+}
+
+.cart-icon {
+  width: 100%;
+  text-align: center;
+}
+
+.search-icon {
+  position: relative;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+}
+
+
+/* react - pagination part  */
+
+.pagination {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  cursor: pointer;
+  width: 20%;
+  margin-inline: auto;
+}
+
+.pagination {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid #6c7ac9;
+  color: #6c7ac9;
+}
+
+.pagination__link {
+  font-weight: bold;
+}
+
+.pagination__link--active {
+  color: #fff;
+  background: #6c7ac9;
+}
+
+.pagination__link--disabled {
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+}

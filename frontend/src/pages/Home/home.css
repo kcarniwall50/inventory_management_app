@@ -1,0 +1,42 @@
+.home-container {
+  max-width: 90%;
+  margin-inline: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-section {
+  display: block;
+
+  width: 20%;
+}
+
+.main-heading {
+  margin: 1rem 0;
+}
+
+.para1 {
+  margin: 1rem 0;
+}
+
+.parent-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 0.3rem;
+}
+
+.nav-page-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
