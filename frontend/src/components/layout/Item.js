@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import "./item.css";
 
-const Item = ({ item, isExpanded, index }) => {
+const Item = ({ item, isExpanded, index, setIsExpanded }) => {
 
   let color1='green'
   let color2='#2439f8'
 
   const [isChild, setIsChild] = useState(false);
+
+  useEffect(()=>{
+
+  if(!isExpanded)
+  setIsChild(false)
+
+  },[isExpanded])
 
   if (item.childrens) {
     return (
@@ -21,10 +28,11 @@ const Item = ({ item, isExpanded, index }) => {
             textDecoration: "none",
           }}
           key={index + 10}
+          onClick={()=>{setIsExpanded(true)}}
         >
-          <div className="it" style={{ margin: "1rem 0" }}>
+          <div  className="it" style={{ margin: "1rem 0" }}>
             {item.icon && (
-              <span style={{ marginLeft: "0.3rem", size: "85" }}>
+              <span  style={{ marginLeft: "0.3rem", size: "85" }}>
                 {item.icon}
               </span>
             )}
@@ -85,10 +93,12 @@ const Item = ({ item, isExpanded, index }) => {
           color: isActive ? color1 :color2,
           textDecoration: "none",
         })}
+
+        onClick={()=>{setIsExpanded(true)}}
       >
         <div className="it" style={{ margin: "1rem 0" }}>
           {item.icon && (
-            <span style={{ marginLeft: "0.3rem" }}>{item.icon}</span>
+            <span  style={{ marginLeft: "0.3rem" }}>{item.icon}</span>
           )}
           {isExpanded && (
             <span style={{ marginLeft: "10%" }}>{item.title}</span>

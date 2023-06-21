@@ -80,19 +80,26 @@ const getSingleProduct = async (req, res) => {
 }
 
 const deleteProduct = async (req, res) => {
+
+  try{
   const product = await productModel.findById(req.params.id);
   // if product doesnt exist
   if (!product) {
-    res.status(404);
-    throw new Error("Product not found");
+    res.status(404).json("Product not found");
   }
   // Match product to its user
   if (product.user.toString() !== req.user.id) {
-    res.status(401);
-    throw new Error("User not authorized");
+    res.status(401).json("User not authorized");
   }
   await product.remove();
   res.status(200).json({ message: "Product deleted." });
+}
+
+catch(e)
+{
+  console.log(e)
+  res.status(500).json("server error")
+}
 }
 
 const updateProduct =   async (req, res) => {

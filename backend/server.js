@@ -21,11 +21,8 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-<<<<<<< HEAD
     origin: ["http://localhost:3000", "https://inventory-app.vercel.app"],
-=======
-    origin: ["http://localhost:3000", "https://inventory-app-six-livid.vercel.app"],
->>>>>>> ffcd8dc06563971bf6f1096f305378e7bc147cfd
+
     credentials: true,
   })
 );

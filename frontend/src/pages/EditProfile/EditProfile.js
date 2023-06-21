@@ -85,7 +85,7 @@ const EditProfile = ({loading}) => {
     try {
     await  dispatch(Set_Loading(true))
       await axios.patch(
-        "http://localhost:5000/user/changePassword",
+        `${BACKEND_URL}/user/changePassword`,
         { oldPassword, password },
         { withCredentials: true }
       );
@@ -117,7 +117,7 @@ const EditProfile = ({loading}) => {
       try {
         dispatch(Set_Loading(true))
          await axios.patch(
-          "http://localhost:5000/user/updateUser",
+          `${BACKEND_URL}//user/updateUser`,
           formDataa,
           { withCredentials: true }
         );
@@ -170,7 +170,7 @@ const EditProfile = ({loading}) => {
           dispatch(Set_Loading(true))
 
           const responseData = await axios.patch(
-            "http://localhost:5000/user/updateUser",
+            `${BACKEND_URL}/user/updateUser`,
             formDataa,
             { withCredentials: true }
           );
@@ -284,7 +284,6 @@ const EditProfile = ({loading}) => {
           </p>
         </form>
 
-        {/* <button>Save Changes</button> */}
 
         <div
           style={{

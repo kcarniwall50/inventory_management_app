@@ -7,7 +7,6 @@ import menu from "./data/sidebarItemsArray";
 import Item from "./Item";
 
 const Sidebar = ({ children }) => {
-
   const [isExpanded, setIsExpanded] = useState(true);
 
   function menuClickHandler() {
@@ -31,6 +30,7 @@ const Sidebar = ({ children }) => {
             style={{
               display: isExpanded ? "inline-flex" : "none",
               transitionDelay: "0s",
+              cursor: "pointer",
             }}
           />
 
@@ -41,6 +41,7 @@ const Sidebar = ({ children }) => {
             style={{
               marginLeft: isExpanded ? "0px" : "0px",
               transitionDelay: "0s",
+              cursor: "pointer",
             }}
           />
         </div>
@@ -52,6 +53,7 @@ const Sidebar = ({ children }) => {
               item={item}
               isExpanded={isExpanded}
               index={index}
+              setIsExpanded={setIsExpanded}
             />
           );
         })}

@@ -18,7 +18,7 @@ import EditProduct from "./pages/Edit Product/EditProduct";
 import { useSelector } from "react-redux";
 
 function App() {
-  if (process.env.REACT_APP_NODE_ENV === "production") {
+  if (process.env.REACT_APP_NODE_ENV !== "production") {
     console.log = function () {};
   }
 
