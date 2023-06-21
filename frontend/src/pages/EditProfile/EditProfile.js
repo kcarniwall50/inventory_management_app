@@ -117,7 +117,7 @@ const EditProfile = ({loading}) => {
       try {
         dispatch(Set_Loading(true))
          await axios.patch(
-          `${BACKEND_URL}//user/updateUser`,
+          `${BACKEND_URL}/user/updateUser`,
           formDataa,
           { withCredentials: true }
         );
